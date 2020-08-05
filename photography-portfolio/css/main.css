@@ -42,15 +42,13 @@ body {
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.2rem;
-  font-weight: 500;
-  line-height: 4rem;
+  font-weight: 400;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.6rem;
-  line-height: 3rem;
 }
 
 p {
@@ -90,34 +88,16 @@ p {
   margin-top: -1px;
 }
 
-/* Animations & Transitions */
-.primary-nav li {
-  animation: scale .8s;
-}
-
 @keyframes scale {
   0% { opacity: 0; transform: scale(0); }
   50% { opacity: 0; transform: scale(0.5); }
   100% { opacity: 1; transform: scale(1); }
 }
 
-.primary-nav li:nth-child(2) a:hover,
-.primary-nav li:nth-child(3) a:hover,
-.primary-nav li:nth-child(4) a:hover {
-  transform: scale(1.08);
-  transition: all .1s ease-in 0.08s;
-}
-
-.fa-home:hover, .fa-shopping-cart:hover {
-  transform: scale(1.25);
-  transition: all .15s ease-out 0.1s;
-}
-
 .logo:hover {
   transform: scale(1.05);
   transition: all .3s ease-out 0.1s;
 }
-
 
 /* Start Header */
 
@@ -126,68 +106,50 @@ p {
 }
 
 nav {
-	background-color: var(--primary-blue);
-	border-top: white solid 6px;
-}
-
-.secondary-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 88vw;
-  max-width: 88%;
-  margin: 0 auto;
-  padding: 12px 0px 10px;
-  font-size: 1.1rem;
-}
-
-.logo {
-  width: 115px;
-}
-
-.secondary-nav .button {
-	background-color: var(--primary-yellow);
-}
-
-.secondary-nav .button a:hover {
-	color: var(--primary-black);
-	background-color: white;
-}
-
-.primary-nav-bar {
 	background-color: var(--secondary-blue);
+  border-top: white solid 6px;
 }
 
 .primary-nav {
   display: flex;
   justify-content: space-between;
-	width: 90%;
-	margin: 0 auto;
   align-items: center;
-  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 85%;
 }
 
-.primary-nav li a:link,
-.primary-nav li a:visited {
-  display: block;
-  padding: 10px 0px;
-  color: white;
-  opacity: .8;
+.logo {
+  margin:20px 0;
 }
 
-.primary-nav li a:hover {
-  transition: .3s;
-  opacity: 1;
+.logo img {
+  width: 115px;
 }
 
-.primary-nav .fa {
-  font-size: 25px;
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 40px;
+  margin-left: 14px;
+}
+
+.social-icons li {
+  margin: 20px 0;
+}
+
+.social-icons li:hover {
+  transform: scale(1.1);
+  transition: all .25s ease-out 0.1s;
 }
 
 .feature-nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  flex-basis: 100%;
   border-bottom: var(--primary-yellow) solid 6px;
   background-color: var(--primary-black);
 }
@@ -225,8 +187,57 @@ nav {
   background-color: #313635;
 }
 
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(95vh - 250px);
+  min-height: 300px;
+  padding: 50px;
+  margin-top: 0px;
+  background: url(../img/home-hero.jpg) no-repeat top left;
+
+
+  background-color: green;
+}
+
+.cta h1 {
+  text-align: center;
+  margin: 0 0 30px;
+
+}
+
+.cta h2 {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.cta-button a:link,
+.cta-button a:visited {
+  display: block;
+  width: 230px;
+  margin: 0 0 10px;
+  padding: 10px 40px;
+  border: solid #fff 1px;
+  text-align: center;
+  color: black;
+  border: thin solid black;
+
+}
+
+.cta-button a:hover {
+  transition: .3s;
+  color: white;
+  background-color: black;
+}
+
 
 /* Start Home */
+
+.home .hero {
+  border-bottom: var(--primary-yellow) solid 6px;
+}
 
 .home .hero img {
   display: block;
@@ -249,6 +260,7 @@ nav {
   width: 80%;
   margin: 0 auto;
   padding: 60px 0 70px;
+  text-align: left;
 }
 
 .home .feature-image img {
@@ -354,26 +366,23 @@ footer .shipping-terms {
 
 @media (min-width: 768px) {
 
-  .secondary-nav {
-	  justify-content: space-between;
-	  width: 75vw;
-    max-width: 75%;
-	}
-
   .primary-nav {
-	  justify-content: space-evenly;
-	  width: 100%;
-	}
+    max-width: 75%;
+  }
+
+  .cta {
+    flex-direction: row;
+  }
 
   .home .feature-article {
     width: 75%
   }
 
   .home .feature-category {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
 }
 
   .primary-footer {
