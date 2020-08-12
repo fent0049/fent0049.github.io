@@ -198,7 +198,7 @@ nav {
   font-weight: 300;
   background-color: white;
   color: var(--primary-green);
-  transition: .25s;
+  transition: .3s;
 }
 
 /* Start Home */
@@ -301,7 +301,7 @@ nav {
 .footer-buttons li a:hover {
 	color: var(--primary-black);
 	background-color: white;
-	transition: all 3s;
+	transition: all ease-in .2s;
 }
 
 .project-button {
@@ -328,7 +328,7 @@ nav {
 
 /* Start Breakpoints */
 
-@media (min-width: 376px) {
+@media (min-width: 420px) {
 
   .hero-title h1 {
     font-size: 9.5vw;
