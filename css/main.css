@@ -83,10 +83,12 @@ nav {
 
 .feature-nav li:nth-child(1) {
   border-top: blue solid 6px;
+  border-right: #444 solid thin;
   }
 
 .feature-nav li:nth-child(2) {
   border-top: orange solid 6px;
+  border-right: #444 solid thin;
   }
 
 .feature-nav li:nth-child(3) {
@@ -248,11 +250,6 @@ nav {
   flex-basis: 0;
   white-space: nowrap;
   text-align: center;
-}
-
-.feature-nav li:nth-child(1),
-.feature-nav li:nth-child(2) {
-  border-right: solid #222 thin;
 }
 
 .feature-nav a:link,
