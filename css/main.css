@@ -4,8 +4,7 @@
 /* Start Global */
 
 :root {
-  --primary-green: #406964;
-  --primary-black: #3D4D4B;
+  --primary-black: #101010;
   --hover: rgba(0,0,0,.5);
 }
 
@@ -93,7 +92,7 @@ flex-direction: column;
   flex-wrap: nowrap;
   text-transform: uppercase;
   padding: 20px 10px;
-  background-image: linear-gradient(to right, blue, orange, green);
+  background-image: linear-gradient(to right, red, green, blue);
 }
 
 .feature-nav li {
@@ -123,7 +122,7 @@ flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.75) 10%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.563) 90%), url("../img/hero.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, .05)), url("../img/hero.png");
 
 }
 
@@ -179,7 +178,7 @@ flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   min-height: calc(100vh - 200px);
-  padding: 60px 0;
+  padding: 60px 0 100px;
 }
 
 .hero-title h1 {
@@ -204,7 +203,7 @@ flex-direction: column;
   font-weight: 300;
   margin: 10px 0 0;
   padding: 12px 25px;
-  background-color: var(--primary-green);
+  background-color: var(--primary-black);
   color: white;
   border-radius: 2px;
 }
@@ -212,7 +211,7 @@ flex-direction: column;
 .hero-title a:hover {
   font-weight: 300;
   background-color: white;
-  color: var(--primary-green);
+  color: var(--primary-black);
   transition: .3s;
 }
 
@@ -239,7 +238,7 @@ flex-direction: column;
   align-self: center;
   font-weight: 300;
   padding: 12px 25px;
-  background-color: var(--primary-green);
+  background-color: var(--primary-black);
   color: white;
   border-radius: 2px;
 }
@@ -247,7 +246,7 @@ flex-direction: column;
 .cta a:hover {
   font-weight: 300;
   background-color: white;
-  color: var(--primary-green);
+  color: var(--primary-black);
   transition: .3s;
 }
 
@@ -276,16 +275,13 @@ flex-direction: column;
   display: block;
   width: 100%;
   height: auto;
-  margin: 0;
-  padding: 10px 0;
-  background-color: var(--primary-green);
 }
 
 
 /* Start Footer */
 
 footer {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--primary-black);
 }
 
 .primary-footer {
@@ -328,11 +324,15 @@ footer {
   margin: 0px auto;
 }
 
+.copyright {
+  padding: 20px 0 80px 0;
+}
+
 .copyright p {
-	font-size: 1.1rem;
+	font-size: 1.05rem;
 	text-align: center;
 	color: white;
-	padding: 30px 0 70px;
+	padding: 4px;
 }
 
 
