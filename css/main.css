@@ -36,14 +36,16 @@ body {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.2rem;
   font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
+  line-height: 1.85rem;
 }
 
 p {
@@ -148,12 +150,13 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 360px);
   padding: 60px 0 100px;
 }
 
 .hero-title h1 {
   font-size: 11vw;
+  line-height: 100%;
   font-weight: 300;
   text-transform: uppercase;
   color: white;
@@ -165,7 +168,7 @@ flex-direction: column;
   line-height: 1.5rem;
   font-weight: 300;
   color: white;
-  padding: 0 40px 10px;
+  padding: 0 50px 10px;
   opacity: 100%;
 }
 
@@ -192,7 +195,7 @@ flex-direction: column;
   font-size: 14px;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   text-transform: uppercase;
   padding: 20px 10px;
   background-image: linear-gradient(to right, red, green, blue);
@@ -285,6 +288,7 @@ flex-direction: column;
 
 .feature-title h2 {
   font-size: 11vw;
+  line-height: 4rem;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
@@ -383,7 +387,7 @@ footer {
 
   .hero-title h1,
   .feature-title h2 {
-    font-size: 9.5vw;
+    font-size: 9.75vw;
     width: 100%;
   }
     
